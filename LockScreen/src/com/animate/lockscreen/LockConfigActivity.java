@@ -1,13 +1,16 @@
 package com.animate.lockscreen;
 
+import com.animate.lockscreen.lockview.UnlockInterface;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.view.KeyEvent;
+import android.view.View.OnClickListener;
 import android.view.WindowManager;
 
-public class LockConfigActivity extends Activity{
+public class LockConfigActivity extends Activity implements UnlockInterface{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +100,11 @@ public class LockConfigActivity extends Activity{
 	@Override
 	public void onBackPressed() {
 		return;
+	}
+
+	@Override
+	public void unlock(int screenId) {
+		finish();
 	}
 	
 }
