@@ -550,6 +550,7 @@ public class SwitchView extends CompoundButton implements IAlgorithm{
                                 mTouchX = x;
                                 invalidate();
                             }
+                            checkUnlockSucess(newPos);
                             return true;
                     	}
                     	if (mOrientation == VERTICAL) {
@@ -560,6 +561,7 @@ public class SwitchView extends CompoundButton implements IAlgorithm{
                                 mTouchY = y;
                                 invalidate();
                             }
+                            checkUnlockSucess(newPos);
                             return true;
                     	}
                     }
@@ -1499,8 +1501,17 @@ public class SwitchView extends CompoundButton implements IAlgorithm{
         return super.verifyDrawable(who) || who == mThumbDrawable || who == mTrackDrawable;
     }
 
+    public void checkUnlockSucess(float pos){
+    	if(pos >= getThumbScrollRange()){
+    		if(mAlgorithmListener!=null){
+    			mAlgorithmListener.algorithmSuccess(getId());
+    			mAlgorithmListener = null;
+    		}
+    	}
+    }
+    
 	@Override
-	public void setAlgorithmListener(AlgorithmListener listener) {
+	public void setOnAlgorithmListener(AlgorithmListener listener) {
 		mAlgorithmListener = listener;
 	}
 }

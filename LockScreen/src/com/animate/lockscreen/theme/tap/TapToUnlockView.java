@@ -1,11 +1,11 @@
-package com.animate.lockscreen.lockview.tap;
+package com.animate.lockscreen.theme.tap;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 
 import com.animate.lockscreen.R;
-import com.animate.lockscreen.lockview.AbstractLockView;
+import com.animate.lockscreen.fragment.AbstractLockView;
 
 public class TapToUnlockView extends AbstractLockView{
 

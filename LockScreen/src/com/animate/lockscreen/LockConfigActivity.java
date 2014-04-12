@@ -1,6 +1,6 @@
 package com.animate.lockscreen;
 
-import com.animate.lockscreen.lockview.UnlockInterface;
+import com.animate.lockscreen.fragment.UnlockInterface;
 
 import android.app.Activity;
 import android.os.Bundle;
