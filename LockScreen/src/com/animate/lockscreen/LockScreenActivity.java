@@ -2,7 +2,7 @@ package com.animate.lockscreen;
 
 import android.os.Bundle;
 
-import com.animate.lockscreen.lockview.UnlockScreenFactory;
+import com.animate.lockscreen.fragment.UnlockScreenFactory;
 
 
 public class LockScreenActivity extends LockConfigActivity{
