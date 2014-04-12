@@ -1,4 +1,4 @@
-package com.animate.lockscreen;
+package com.animate.lockscreen.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import com.animate.lockscreen.R;
 import com.animate.lockscreen.service.LockScreenService;
 
 public class MainActivity extends Activity {
