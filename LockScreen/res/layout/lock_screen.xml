@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Unlock" />
 
-    <com.animate.lockscreen.algorithm.SwitchView
+    <com.animate.lockscreen.widget.SwitchView
         android:id="@+id/switch3"
         style="@style/mySwitchStyle"
         android:layout_width="wrap_content"
