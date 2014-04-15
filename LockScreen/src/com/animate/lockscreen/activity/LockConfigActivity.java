@@ -50,11 +50,12 @@ public class LockConfigActivity extends BaseFragmentActivity implements UnlockIn
     
     @Override
 	 public void onAttachedToWindow() {
-		// TODO Auto-generated method stub
+    	
 		this.getWindow().setType(WindowManager.LayoutParams.TYPE_KEYGUARD_DIALOG|WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         super.onAttachedToWindow();
 	 }
+    
     
     @Override
     public boolean onKeyDown(int keyCode, android.view.KeyEvent event) {
