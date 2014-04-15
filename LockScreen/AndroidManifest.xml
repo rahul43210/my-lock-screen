@@ -11,15 +11,15 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Black.NoTitleBar" >
         <activity
-            android:name="com.animate.lockscreen.MainActivity"
+            android:name="com.animate.lockscreen.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,25 +27,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
-            android:name=".LockScreenActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-          	android:screenOrientation="portrait">
+            android:name="com.animate.lockscreen.activity.LockScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
-        
         <service android:name="com.animate.lockscreen.service.LockScreenService" >
         </service>
 
         <receiver
-            android:enabled="true"
-            android:name="com.animate.lockscreen.receiver.LockScreenReceiver" >
-            <intent-filter >
+            android:name="com.animate.lockscreen.receiver.LockScreenReceiver"
+            android:enabled="true" >
+            <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-
             </intent-filter>
         </receiver>
-        
     </application>
 
 </manifest>
