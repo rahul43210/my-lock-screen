@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
+import com.animate.lockscreen.theme.pattern.ThemePatternOne;
 import com.animate.lockscreen.theme.slide.SlideToUnlock;
 import com.animate.lockscreen.theme.tap.TapToUnlockView;
 
@@ -28,6 +29,6 @@ public class UnlockScreenFactory {
 	}
 	
 	public Fragment getUnlockScreen(Context context){
-		return new SlideToUnlock();
+		return new ThemePatternOne();
 	}
 }
