@@ -11,6 +11,8 @@ import com.animate.lockscreen.service.LockScreenService;
 
 public class MainActivity extends Activity {
 
+	private static final int REQ_CREATE_PATTERN = 1;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -31,5 +33,5 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
-
+	
 }

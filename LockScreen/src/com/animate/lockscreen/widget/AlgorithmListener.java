@@ -1,4 +1,4 @@
-package com.animate.lockscreen.algorithm;
+package com.animate.lockscreen.widget;
 
 public interface AlgorithmListener {
 	

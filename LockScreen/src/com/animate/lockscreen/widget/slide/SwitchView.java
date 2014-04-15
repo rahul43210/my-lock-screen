@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.animate.lockscreen.algorithm;
+package com.animate.lockscreen.widget.slide;
 
 
 import android.content.Context;
@@ -43,6 +43,8 @@ import android.view.ViewConfiguration;
 import android.widget.CompoundButton;
 
 import com.animate.lockscreen.R;
+import com.animate.lockscreen.widget.AlgorithmListener;
+import com.animate.lockscreen.widget.IAlgorithm;
 
 
 /**
