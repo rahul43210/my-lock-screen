@@ -51,7 +51,7 @@ public class LockConfigActivity extends BaseFragmentActivity implements UnlockIn
     @Override
 	 public void onAttachedToWindow() {
     	
-		this.getWindow().setType(WindowManager.LayoutParams.TYPE_KEYGUARD_DIALOG|WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//		this.getWindow().setType(WindowManager.LayoutParams.TYPE_KEYGUARD_DIALOG|WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         super.onAttachedToWindow();
 	 }

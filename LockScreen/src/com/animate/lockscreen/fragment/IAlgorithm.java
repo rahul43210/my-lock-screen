@@ -1,4 +1,4 @@
-package com.animate.lockscreen.widget;
+package com.animate.lockscreen.fragment;
 
 public interface IAlgorithm {
 

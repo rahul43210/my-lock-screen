@@ -5,9 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.animate.lockscreen.R;
+import com.animate.lockscreen.fragment.AlgorithmListener;
 import com.animate.lockscreen.fragment.LockScreenFragment;
-import com.animate.lockscreen.widget.AlgorithmListener;
-import com.animate.lockscreen.widget.slide.SwitchView;
+import com.animate.lockscreen.widget.lock.SwitchView;
 
 public class SlideToUnlock extends LockScreenFragment implements AlgorithmListener{
 
